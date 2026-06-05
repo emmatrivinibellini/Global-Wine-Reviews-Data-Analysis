@@ -1,70 +1,136 @@
-# 🍷 Exploring Global Wine Trends: Data Manipulation & Visualization with Python  
-**Expensive Doesn't Always Mean Better: What 130K Wine Reviews Reveal About Price & Quality**  
-**Dataset:** [Wine Reviews Dataset](https://www.kaggle.com/datasets/zynicide/wine-reviews)  
-**Analyze 130K wine reviews to uncover regional patterns, price-quality dynamics, and actionable insights for building a global wine marketplace.**
+# Wine Marketplace Analysis: Price, Quality & Consumer Trends
+
+## Executive Summary
+
+Building a successful wine marketplace requires understanding what drives consumer value and how wine quality, pricing, and regional reputation influence purchasing decisions. Using **Python**, I analyzed over **130,000 wine reviews** to uncover global wine trends and identify opportunities for connecting local producers with buyers worldwide.
+
+By **cleaning, transforming, and visualizing** the data, I evaluated country-level performance, regional wine markets, and the relationship between price and quality. The analysis revealed that expensive wines are not always better, certain regions command premium prices due to reputation rather than quality differences, and consumers can find highly rated wines across multiple price points.
+
+### Key Business Impact
+
+* Analyzed **130,000 wine reviews** from producers worldwide
+* Identified premium and value-driven wine regions
+* Measured the relationship between price and quality (**correlation = 0.42**)
+* Revealed opportunities for marketplace segmentation across different customer budgets
+* Generated insights to support product positioning and seller acquisition strategies
 
 ---
 
-## 📊 Project Overview  
-This project focuses on analyzing a dataset of **130,000 wine reviews**, including details about wine variety, origin, vineyard, price, and description.  
-The goal is to explore the data and extract insights that could inform the creation of a **global wine marketplace**, connecting **small local producers** with **buyers worldwide**.  
+## Business Problem
 
-A key methodological choice was splitting the dataset into two: `df_wr_full` (all records, used for country-level analysis) and `df_wr` (province-complete records only, used for regional deep dives) — ensuring accuracy at both global and local levels.
+A global wine marketplace aims to connect small local producers with buyers around the world. To build an effective platform, it is important to understand:
 
-Through **Python, Pandas, FuzzyWuzzy, and data visualization tools**, this analysis identifies price trends, quality benchmarks, and consumer preferences.
+* Which countries and regions produce the highest-rated wines
+* Whether higher prices actually indicate better quality
+* Which wine-producing regions offer the best value
+* How regional reputation impacts pricing
+* What insights can improve marketplace positioning and product recommendations
 
----
-
-## 🎯 Objectives  
-- **Country-Level Insights:** Understand global wine performance by calculating average scores and prices per country.  
-- **Italian Market Focus:** Deep dive into Italy's regional data to explore price distributions, correlations, and provincial differences.  
-- **European Context:** Map wine production across Europe to highlight major producers and grape varieties.  
-- **Price–Quality Relationship:** Measure correlations to determine whether higher prices truly align with better quality.  
+The goal of this project was to use wine review data to uncover market trends and identify opportunities for creating a curated marketplace that serves both premium and budget-conscious consumers.
 
 ---
 
-## 🧠 Key Insights  
-- **All analyzed countries score above 80 points** on average — signaling a global trend toward excellence in wine production.
-- **Switzerland has the highest average wine price**, driven by high cost of living and limited variety; France, Italy, and Portugal offer better value across a broader range.
-- **Italian wine average price: €39.66**, but the **median is €28** — a positively skewed distribution caused by high-end outliers (variance: 1,447.99), confirming a market that spans from everyday to luxury.
-- **Piedmont has the highest average price** among Italian provinces; **Tuscany** follows closely — yet all provinces consistently score **around 90 points**, suggesting price reflects prestige and demand rather than quality gaps.
-- **Tuscany accounts for 30%** of bottles sold nationally, confirming its dominant global brand.
-- **Moderate correlation (0.42)** between price and quality — price does not guarantee excellence.
+## Methodology
+
+### Data Preparation
+
+* Cleaned and standardized a dataset containing over 130,000 wine reviews
+* Created separate datasets for country-level and province-level analysis
+* Handled missing values and standardized location information
+
+### Analysis
+
+Used Python to analyze:
+
+* Average wine scores by country
+* Average wine prices by country
+* Italian regional wine performance
+* Wine price distributions
+* Sales concentration by province
+* Correlation between price and quality
+* European wine production patterns
+
+### Visualization
+
+Created visualizations to communicate findings, including:
+
+* Country performance comparisons
+* Price distribution analysis
+* Regional benchmarking
+* Correlation heatmaps
+* Geographic wine production maps
 
 ---
 
-## 🧰 Tools & Libraries  
-- **Languages:** Python  
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Plotly, FuzzyWuzzy  
-- **Environment:** Jupyter Notebook  
+## Skills
+
+**Python:** Pandas, NumPy, Data Cleaning, Data Transformation, Exploratory Data Analysis (EDA)
+
+**Data Visualization:** Matplotlib, Seaborn, Plotly, Geographic Mapping
+
+**Data Analysis:** Descriptive Statistics, Correlation Analysis, Market Segmentation, Consumer Behavior Analysis, Regional Benchmarking
 
 ---
 
-## 🗂️ Dataset  
+## Results & Business Recommendations
+
+The analysis revealed several important trends within the global wine industry.
+
+### Global Wine Performance
+
+* All analyzed countries achieved average wine ratings above 80 points, demonstrating consistently high global wine quality.
+* Switzerland recorded the highest average wine prices, while countries such as Italy, France, and Portugal offered stronger value relative to quality.
+
+### Italian Market Insights
+
+* The average Italian wine price was €39.66, while the median price was only €28, indicating a market influenced by premium luxury products.
+* Piedmont and Tuscany command the highest prices nationwide.
+* Despite significant price differences, most Italian provinces maintain average ratings close to 90 points.
+
+### Price vs Quality
+
+* The correlation between price and quality was 0.42, indicating only a moderate relationship.
+* Higher-priced wines are not necessarily better wines.
+* Consumers can find excellent products across a wide range of price points.
+
+### Marketplace Opportunities
+
+* Tuscany accounts for approximately 30% of bottles sold, confirming its strong international brand recognition.
+* Southern Italian regions and Sicily provide opportunities to promote high-quality wines at more accessible prices.
+* Marketplace recommendations should prioritize quality-to-price value rather than price alone.
+
+### Recommendations
+
+Based on the findings, I would recommend:
+
+* Building recommendation systems based on quality-to-price value rather than premium pricing alone.
+* Highlighting high-performing but less recognized regions (e.g., Southern Italy and Sicily) to increase product diversity and offer customers better value.
+* Creating customer segments based on spending behavior, allowing the marketplace to recommend wines for budget-conscious, mid-range, and premium buyers.
+* Promoting smaller local producers whose wines receive strong ratings but lack international visibility.
+* Using regional reputation, review scores, and pricing together to improve product discovery and search rankings.
+* Developing curated collections such as "Best Value Wines", "Hidden Gems", and "Top Rated Under €20" to help customers navigate the catalog more effectively.
+
+These strategies would help the marketplace differentiate itself from competitors, improve customer satisfaction, and increase conversion by matching users with wines that fit both their preferences and budget.
+
+---
+
+## Next Steps
+
+* Develop a value score metric combining quality, price, and popularity to support product recommendations.
+* Expand the analysis to winery-level performance to identify potential producer partnerships.
+* Analyze consumer purchasing behavior and conversion data to optimize marketplace merchandising and pricing strategies.
+
+---
+The analysis shows that marketplace growth opportunities lie in promoting high-value wines rather than simply premium-priced products, allowing the platform to serve a broader customer base while supporting smaller producers.
+---
+
+## Dataset  
 - **Source:** [Wine Reviews Dataset](https://www.kaggle.com/datasets/zynicide/wine-reviews) (130,000 rows)  
 - **Main Columns:** `country`, `province`, `variety`, `vineyard`, `price`, `points`, `description`
 
 ---
 
-## 📈 Visualizations  
-1. Average Wine Score by Country (Bar Chart)  
-2. Average Wine Price by Country (Bar Chart)  
-3. Distribution of Italian Wine Prices (KDE Plot with mean, median, std dev)  
-4. Average Price and Score by Italian Province (Grouped Bar Chart)  
-5. Bottles Sold by Province in Italy (Donut Pie Chart)  
-6. Correlation Between Price and Score (Heatmap)  
-7. European Wine Production Map (Choropleth)  
-
----
-
-## 🔍 Conclusions  
-The analysis reveals **widespread excellence** in the international wine industry, with **Italy leading** both in production and diversity.  
-Regional disparities highlight opportunities for **market segmentation** — from high-end producers in Piedmont and Tuscany to accessible, high-quality wines from Southern Italy and Sicily.  
-The weak-to-moderate price–quality correlation (0.42) is a key finding for marketplace design: **quality can be found at every price point**, making it possible to build a curated selection that serves both budget-conscious and premium buyers.
-
----
-
-## 📎 Files in this Repository  
+## Files in this Repository  
 | File | Description |
 |------|--------------|
 | `Wine_Review_Data_Manipulation_Visualization.ipynb` | Main analysis in Python (data cleaning, exploration, visualization). |
