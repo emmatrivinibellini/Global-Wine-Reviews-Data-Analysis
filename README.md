@@ -121,7 +121,9 @@ These strategies would help the marketplace differentiate itself from competitor
 * Analyze consumer purchasing behavior and conversion data to optimize marketplace merchandising and pricing strategies.
 
 ---
-The analysis shows that marketplace growth opportunities lie in promoting high-value wines rather than simply premium-priced products, allowing the platform to serve a broader customer base while supporting smaller producers.
+
+**The analysis shows that marketplace growth opportunities lie in promoting high-value wines rather than simply premium-priced products, allowing the platform to serve a broader customer base while supporting smaller producers.**
+
 ---
 
 ## Dataset  
